@@ -6,7 +6,7 @@
     protected function Conexion(){
         try{
        //Esta es la cadena de conexion//
-            $conectar= $this->dbh= new PDO("mysql:local=localhost,dbname=crud2", "root","");
+            $conectar =$this->dbh=new PDO("mysql:local=localhost;dbname=crud2","root","");
       //Siempre tenemos que retornar la cadena de conexion//
             return $conectar;  
     }
